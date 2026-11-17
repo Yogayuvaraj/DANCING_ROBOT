@@ -1,0 +1,279 @@
+.text{
+    text-align: center;
+    color: #000;
+}
+
+body{
+    background-color: rgba(214, 214, 214, 0.492);
+}
+
+.main{
+    width: 800px;
+    height: 700px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 25%;
+    background-color: rgba(221, 160, 221, 0.619); 
+}
+
+.upper{
+    display: flex;
+}
+
+.head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    justify-content: center;
+    width: 200px;
+    height: 150px;
+    border-radius: 120px 120px 0 0;
+    /* border: 2px solid black; */
+    background-color: rgb(175, 4, 254);
+    
+}
+
+.right-eye{
+    display: flex;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.left-eye{
+    display: flex;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.middle{
+    display: flex;
+    width:330px;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    /* align-content: space-evenly; */
+}
+
+.stomach{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    /* border: 2px solid black; */
+    border-radius: 0 0 60px 60px;
+    background-color: rgb(175, 4, 254);
+    /* transition: transform 3s; */
+}
+
+.right-arm{
+    display: flex;
+    width: 30px;
+    height: 120px;
+    /* margin-top: 20px; */
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    background-color:  rgb(175, 4, 254);
+}
+
+.left-arm{
+    display: flex;
+    width: 30px;
+    height: 120px;
+    /* margin-top: 20px; */
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    background-color: rgb(175, 4, 254);
+}
+
+.lower{
+    display: flex;
+    margin: -4%;
+    width: 100px;
+    justify-content: space-evenly;
+}
+
+.right-leg{
+    margin: auto;
+    margin-right: 30px;
+    width: 40px;
+    height: 110px;
+    /* border: 2px solid black; */
+    border-radius: 0 0 20px 20px;
+    background-color: rgb(175, 4, 254);
+}
+
+.left-leg{
+    margin: auto;
+    width: 40px;
+    height: 110px;
+    margin-left: 10px;
+    /* border: 2px solid black; */
+    border-radius: 0 0 20px 20px;
+    background-color: rgb(175, 4, 254);
+}
+
+.main:hover .stomach{
+    animation: bor 1s infinite;
+}
+
+@keyframes bor{
+    0%{
+        transform: rotate(0deg);
+        border-radius: 80px;
+    }
+    100%{
+        transform: rotate(360deg);
+        border-radius: 80px;
+    }
+}
+
+.main:hover .right-leg{
+    animation: rleg 1s infinite;
+}
+
+@keyframes rleg {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.main:hover .left-leg{
+    animation: lleg 1s infinite;
+}
+
+@keyframes lleg {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.main:hover .right-arm{
+    animation: rarm 1s infinite;
+    transform-origin: top;
+}
+
+@keyframes rarm {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    100%{
+         transform: rotate(0deg);
+    }
+}
+
+.main:hover .left-arm{
+    animation: larm 1s infinite;
+    transform-origin: top;
+}
+
+@keyframes larm {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-90deg);
+    }
+    100%{
+         transform: rotate(0deg);
+    }
+   
+}
+
+.main:hover .head{
+    animation: width 1s infinite;
+}
+
+@keyframes width {
+    0%{
+        width: 200px;
+    }
+    50%{
+        width: 250px;
+    }
+    100%{
+         width: 200px;
+    }
+}
+
+.main:hover .right-eye{
+    animation: reye 1s infinite;
+}
+
+@keyframes reye {
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(-30px);
+    }
+    100%{
+         transform: translate(0px);
+    }
+}
+
+.main:hover .left-eye{
+    animation: leye 1s infinite;
+}
+
+@keyframes leye {
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(-30px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+.main:hover{
+    animation:color 3s infinite;
+}
+/* @keyframes color{
+    0%{
+        background-color: olivedrab;
+    }
+    25%{
+        background-color:red;
+    }
+     50%{
+        background-color:blue;
+    }
+     75%{
+        background-color:green;
+    }
+     100%{
+        background-color:yellow;
+    }
+
+} */
+
